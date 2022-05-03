@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sodien ir skaista diena</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="full">
+        <div class="left">
+
+    <h1>Šis ir mans pirmais HTML dokuments</h1>
+   
+    <h2 class="note">Šī ir pirmā rindkopa</h2>
+
+<!-- p nozīmē paragrāfs -->
+
+<p class="note">
+    Šis ir <strong>apraksts</strong> par mani. (skola)
+    <a href="https://edu.lu.lv/" target="_blank">LU</a>
+
+    <h6>Apakšvirsraksts</h6>
+    Integer sapien nibh, posuere at felis sed, scelerisque cursus risus. Suspendisse ut nunc sed neque eleifend aliquam. Nulla et erat ut leo suscipit vehicula.
+</p>
+
+<h2>Šī ir otrā rindkopa</h2>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales molestie nibh in fringilla. Sed pulvinar dui eget mi laoreet efficitur. Sed faucibus varius justo non condimentum. Integer lobortis dictum augue, a ultricies purus eleifend non. Phasellus et convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla erat, ornare vitae pulvinar eu, porttitor sed turpis. Aliquam erat volutpat. Aliquam non ipsum eu metus sagittis convallis eget sed tellus. Etiam id tincidunt turpis. Integer sapien nibh, posuere at felis sed, scelerisque cursus risus. Suspendisse ut nunc sed neque eleifend aliquam. Nulla et erat ut leo suscipit vehicula.
+</p>
+
+<h2>Bilde ar Audi</h2>
+    <img src="img/audi.jpeg" width="30%" alt="bilde ar audi">
+        </div>
+<div class="right">
+    <br>
+    <img src="https://www.lu.lv/templates/LU.LV/Public/Images/logo_100_blue.svg" height="100px" alt="LU logo">
+
+    <input id="vecums" maxlength="8">
+    <button id="poga">SPIED MANI</button>
+
+    <p>Lietotāja vecums ir: <strong id="lietotajvecums"></strong></p>
+
+<h3>Iepurkumu saraksts</h3>
+    <ul>
+        <li>Piens</li>
+        <li>Maize</li>
+        <li>Cukurs</li>
+    </ul>
+<h3>Kā uzvārīt tēju</h3>
+    <ol>
+        <li>Jāuzvāra ūdens</li>
+        <li>Jāieber tēja krūzē</li>
+        <li>Jāielej ūdens</li>
+        <li>Jāpagaida kamēr tēja ievilksies</li>
+    </ol>
+</div>
+</div>
+</body>
+
+<script>
+    document.getElementById("poga").onclick = function() {
+        var vecums = document.getElementById("vecums").value;
+        alert("Hello Juris! Tavs vecums ir " +  vecums);
+        document.getElementById("lietotajavecums").innerText = vecums;
+    };
+    
+    </script>
+    <p>Lietotāja vecums ir: <strong id="lietotajavecums"></strong>> </p>
+    
+
+</html>

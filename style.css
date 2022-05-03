@@ -1,0 +1,29 @@
+/* Pēc klases */
+.note{
+    color: blue;
+}
+
+/* # ID */
+
+h3 {
+    color: violet;
+    background-color: black;
+
+}
+
+.full{
+    border-style: groove;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+.left{
+    background-color: burlywood;
+
+}
+
+.right{
+    background-color: lightblue;
+
+}
